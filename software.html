@@ -19,6 +19,8 @@
 		/* Crossfade between pages instead of flashing blank */
 		@view-transition { navigation: auto; }
 		html { background-color: #e1e6e1; }
+		/* Project photos stack above their text on phones */
+		@media screen and (max-width: 736px) { .panel.project > .image { height: 14rem; } }
 	</style>
 </head>
 <body>
@@ -27,7 +29,7 @@
 			<section class="panel banner right">
 				<div class="content color0 span-3-75">
 					<h1 class="major">Software</h1>
-					<p>Things I've built, mostly for live production.</p>
+					<p>Little tools I've made, mostly to make gigs a bit easier.</p>
 					<ul class="actions">
 						<li><a href="index.html" class="button primary color1 circle icon solid fa-angle-left">Back</a></li>
 					</ul>
@@ -37,29 +39,29 @@
 				</div>
 			</section>
 
-			<section class="panel spotlight medium left">
-				<div class="content span-7">
+			<section class="panel project">
+				<div class="image filtered span-3" data-position="top left">
+					<img src="images/shot-dlive.jpg" alt="" />
+				</div>
+				<div class="intro color1 span-3-25">
 					<h2 class="major">dLive Show Editor</h2>
-					<p>A browser-only editor and inspector for Allen &amp; Heath dLive show files. Shows are processed locally and never uploaded. <a href="https://github.com/jaylenjinx/dlive-show-editor">Source on GitHub</a>.</p>
+					<p>A browser tool for poking around inside Allen &amp; Heath dLive show files and tweaking them. Everything stays on your computer. <a href="https://github.com/jaylenjinx/dlive-show-editor">Source on GitHub</a>.</p>
 					<ul class="actions">
 						<li><a href="https://jaylenjinx.github.io/dlive-show-editor/" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
 					</ul>
 				</div>
-				<div class="image filtered tinted" data-position="top left">
-					<img src="images/pic01.jpg" alt="" />
-				</div>
 			</section>
 
-			<section class="panel spotlight medium left">
-				<div class="content span-7">
+			<section class="panel project">
+				<div class="image filtered span-3" data-position="top left">
+					<img src="images/shot-wing.jpg" alt="" />
+				</div>
+				<div class="intro color2 span-3-25">
 					<h2 class="major">WING LiveTrax Bridge</h2>
-					<p>A small Rust daemon that links a Behringer WING to Harrison LiveTrax 3 over OSC: channel name sync, transport and record control, and scene / marker linking. <a href="https://github.com/jaylenjinx/Wing-Livetrax">Source on GitHub</a>.</p>
+					<p>Gets a Behringer WING and Harrison LiveTrax 3 talking to each other: channel names, transport, recording, scenes and markers. <a href="https://github.com/jaylenjinx/Wing-Livetrax">Source on GitHub</a>.</p>
 					<ul class="actions">
 						<li><a href="https://jaylenjinx.github.io/Wing-Livetrax/" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
 					</ul>
-				</div>
-				<div class="image filtered tinted" data-position="top right">
-					<img src="images/pic02.jpg" alt="" />
 				</div>
 			</section>
 

@@ -19,6 +19,8 @@
 		/* Crossfade between pages instead of flashing blank */
 		@view-transition { navigation: auto; }
 		html { background-color: #e1e6e1; }
+		/* Project photos stack above their text on phones */
+		@media screen and (max-width: 736px) { .panel.project > .image { height: 14rem; } }
 	</style>
 </head>
 <body>
@@ -27,7 +29,7 @@
 			<section class="panel banner right">
 				<div class="content color0 span-3-75">
 					<h1 class="major">Bands</h1>
-					<p>Bands I've worked with, on stage and behind the desk.</p>
+					<p>Bands I've been lucky enough to work with.</p>
 					<ul class="actions">
 						<li><a href="index.html" class="button primary color1 circle icon solid fa-angle-left">Back</a></li>
 					</ul>
@@ -37,26 +39,26 @@
 				</div>
 			</section>
 
-			<section class="panel spotlight medium left">
-				<div class="content span-7">
+			<section class="panel project">
+				<div class="image filtered tinted span-3" data-position="top left">
+					<img src="images/pic03.jpg" alt="" />
+				</div>
+				<div class="intro color1 span-3-25">
 					<h2 class="major">Honeydrip</h2>
-					<p>Honeydrip describe themselves as <em>a sublime fever dream for restless hearts</em>, and their latest single, <em>Next To You</em>, is out now. I work with them on audio, looking after their sound so the band can focus on playing. <a href="https://www.instagram.com/itshoneydrip/">@itshoneydrip</a></p>
+					<p>Honeydrip call themselves <em>a sublime fever dream for restless hearts</em>, and their new single <em>Next To You</em> is out now. I help out on audio. <a href="https://www.instagram.com/itshoneydrip/">@itshoneydrip</a></p>
 					<ul class="actions">
 						<li><a href="https://www.instagram.com/itshoneydrip/" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
 					</ul>
 				</div>
-				<div class="image filtered tinted" data-position="top left">
-					<img src="images/pic03.jpg" alt="" />
-				</div>
 			</section>
 
-			<section class="panel spotlight medium left">
-				<div class="content span-7">
-					<h2 class="major">Playlunch</h2>
-					<p>Playlunch are a seven-piece funk rock band from Melbourne. I work with them on lighting and video, building the looks and visuals for their live shows.</p>
-				</div>
-				<div class="image filtered tinted" data-position="top right">
+			<section class="panel project">
+				<div class="image filtered tinted span-3" data-position="top left">
 					<img src="images/pic08.jpg" alt="" />
+				</div>
+				<div class="intro color2 span-3-25">
+					<h2 class="major">Playlunch</h2>
+					<p>A seven-piece funk rock band from Melbourne. I help out with their lighting and video.</p>
 				</div>
 			</section>
 

@@ -19,6 +19,8 @@
 		/* Crossfade between pages instead of flashing blank */
 		@view-transition { navigation: auto; }
 		html { background-color: #e1e6e1; }
+		/* Project photos stack above their text on phones */
+		@media screen and (max-width: 736px) { .panel.project > .image { height: 14rem; } }
 	</style>
 </head>
 <body>
@@ -27,7 +29,7 @@
 			<section class="panel banner right">
 				<div class="content color0 span-3-75">
 					<h1 class="major">Lighting<br />Design</h1>
-					<p>Shows I've lit, and the tools I use to run them.</p>
+					<p>Some shows I've lit, plus a plugin I use to run them.</p>
 					<ul class="actions">
 						<li><a href="index.html" class="button primary color1 circle icon solid fa-angle-left">Back</a></li>
 					</ul>
@@ -37,26 +39,26 @@
 				</div>
 			</section>
 
-			<section class="panel spotlight medium left">
-				<div class="content span-7">
+			<section class="panel project">
+				<div class="image filtered span-3" data-position="top left">
+					<img src="images/shot-firesystem.jpg" alt="" />
+				</div>
+				<div class="intro color1 span-3-25">
 					<h2 class="major">FireSystem</h2>
-					<p>A grandMA3 busking plugin: prep a look on a layout (groups, colours, positions, MAtricks, timing) and nothing reaches the stage until you press FIRE.</p>
+					<p>A grandMA3 plugin for busking. Set up a look, then hit FIRE when you're ready for it to go out.</p>
 					<ul class="actions">
 						<li><a href="https://jaylenjinx.github.io/ma3-fire-system/" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
 					</ul>
 				</div>
-				<div class="image filtered tinted" data-position="top left">
-					<img src="images/pic11.jpg" alt="" />
-				</div>
 			</section>
 
-			<section class="panel spotlight medium left">
-				<div class="content span-7">
+			<section class="panel project">
+				<div class="image filtered tinted span-3" data-position="top left">
+					<img src="images/pic12.jpg" alt="" />
+				</div>
+				<div class="intro color2 span-3-25">
 					<h2 class="major">Show one</h2>
 					<p>TODO: a short description, where it was and what you did.</p>
-				</div>
-				<div class="image filtered tinted" data-position="top right">
-					<img src="images/pic12.jpg" alt="" />
 				</div>
 			</section>
 

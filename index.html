@@ -19,6 +19,8 @@
 		/* Crossfade between pages instead of flashing blank */
 		@view-transition { navigation: auto; }
 		html { background-color: #e1e6e1; }
+		/* Project photos stack above their text on phones */
+		@media screen and (max-width: 736px) { .panel.project > .image { height: 14rem; } }
 	</style>
 </head>
 <body>
@@ -26,50 +28,50 @@
 		<div id="wrapper">
 			<section class="panel banner right">
 				<div class="content color0 span-3-75">
-					<h1 class="major">Hi,<br />I'm Jay</h1>
-					<p>I'm a developer, lighting designer and audio tech based in <strong>Sydney, Australia</strong>. This is where I keep the things I've built, lit and worked on.</p>
+					<h1 class="major">Hey,<br />I'm Jay</h1>
+					<p>I do sound, lights and the odd bit of code, mostly around <strong>Sydney</strong>. Here's some of the stuff I've been working on.</p>
 				</div>
 				<div class="image filtered span-1-75" data-position="100% 100%">
 					<img src="images/greenlogo.jpg" alt="" />
 				</div>
 			</section>
 
-			<section class="panel spotlight medium left">
-				<div class="content span-7">
+			<section class="panel project">
+				<div class="image filtered span-3" data-position="top left">
+					<img src="images/shot-dlive.jpg" alt="" />
+				</div>
+				<div class="intro color1 span-3-25">
 					<h2 class="major">Software</h2>
-					<p>Tools for consoles, shows and stages, plus a few older apps.</p>
+					<p>Little tools I've made, mostly to make gigs a bit easier.</p>
 					<ul class="actions">
 						<li><a href="software.html" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
 					</ul>
 				</div>
-				<div class="image filtered tinted" data-position="top left">
-					<img src="images/devbg.jpg" alt="" />
-				</div>
 			</section>
 
-			<section class="panel spotlight medium left">
-				<div class="content span-7">
+			<section class="panel project">
+				<div class="image filtered span-3" data-position="top left">
+					<img src="images/shot-firesystem.jpg" alt="" />
+				</div>
+				<div class="intro color2 span-3-25">
 					<h2 class="major">Lighting Design</h2>
-					<p>Shows I've lit and the tools I've built for running them.</p>
+					<p>Shows I've lit, and a plugin I use to run them.</p>
 					<ul class="actions">
 						<li><a href="lighting.html" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
 					</ul>
 				</div>
-				<div class="image filtered tinted" data-position="top right">
-					<img src="images/pic11.jpg" alt="" />
-				</div>
 			</section>
 
-			<section class="panel spotlight medium left">
-				<div class="content span-7">
+			<section class="panel project">
+				<div class="image filtered span-3" data-position="top left">
+					<img src="images/labelbg.jpg" alt="" />
+				</div>
+				<div class="intro color3 span-3-25">
 					<h2 class="major">Bands</h2>
-					<p>Bands I've worked with, on stage and behind the desk.</p>
+					<p>Bands I've been lucky enough to work with.</p>
 					<ul class="actions">
 						<li><a href="bands.html" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
 					</ul>
-				</div>
-				<div class="image filtered tinted" data-position="top left">
-					<img src="images/labelbg.jpg" alt="" />
 				</div>
 			</section>
 
